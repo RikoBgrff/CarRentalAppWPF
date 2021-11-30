@@ -1,0 +1,70 @@
+﻿<Window x:Class="Car_Rental_App.Views.LoginView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Car_Rental_App.Views"
+        mc:Ignorable="d"
+        Title="Login"  Width="800" Height="600" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="../Assets/icon.png">
+    <!--<Image Source="../Assets/backgroundImageLoginView.jpg" Stretch="UniformToFill"></Image>-->
+    <Canvas Background="#25333D" >
+        <Separator Canvas.Top="310" Height="34" Width="286" RenderTransformOrigin="0.5,0.5" Canvas.Left="93">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90.517"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <TextBlock Text="Car Rental App" TextWrapping="Wrap" Foreground="White" FontSize="25" Canvas.Left="86" Canvas.Top="292" Width="134"></TextBlock>
+        <TextBlock FontSize="80" Canvas.Left="19" Canvas.Top="226" Width="33" Foreground="#6EDAA1" Height="99">.</TextBlock>
+        <TextBlock FontSize="80" Canvas.Left="36" Canvas.Top="226" Width="32" Foreground="#60B98E" Height="99">.</TextBlock>
+        <TextBlock FontSize="80" Canvas.Left="19" Canvas.Top="266" Width="32" Foreground="#437866" Height="106">.</TextBlock>
+        <TextBlock FontSize="80" Canvas.Left="36" Canvas.Top="266" Width="32" Foreground="#52997A" Height="99">.</TextBlock>
+
+
+        <TextBox x:Name="EmailTextBox" 
+            Margin="5"  
+            Height="55" 
+            Width="411"
+            BorderThickness="1"
+            Style="{DynamicResource MaterialDesignOutlinedTextBox}"
+            Foreground="White"
+            BorderBrush="#6ACF9A"
+            Canvas.Left="298" 
+            Canvas.Top="202"
+                 FontSize="18"/>
+        <TextBlock IsHitTestVisible="False"
+                   Text="E-Mail"
+                   FontSize="20"
+                   Canvas.Left="298" 
+                   Canvas.Top="160"
+                   Margin="5" 
+                   Height="42" 
+                   Width="411"
+                   Foreground="White">
+        </TextBlock>
+
+        <PasswordBox  Height="55" 
+         x:Name="PasswordTextBox"
+            Width="411"
+            BorderThickness="1"
+            Style="{DynamicResource MaterialDesignOutlinedPasswordBox}"
+            Foreground="White"
+            BorderBrush="#6ACF9A"
+            Canvas.Left="298" 
+            Canvas.Top="325"/>
+        <Button Name="SubmitBtn" Canvas.Left="298" Canvas.Top="442" Width="411"  Background="#6EDAA1" Foreground="White" FontSize="18" BorderBrush="#6EDAA1" Click="SubmitBtn_Click">Submit</Button>
+        <TextBlock IsHitTestVisible="False"
+            Text="Password"
+            FontSize="20"
+            Canvas.Left="303" 
+            Canvas.Top="279" 
+            Height="42" 
+            Width="411"
+            Foreground="White">
+        </TextBlock>
+    </Canvas>
+</Window>
